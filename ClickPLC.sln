@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClickPLC.NET", "ClickPLC\ClickPLC.NET.csproj", "{AD74EDA5-EE07-4AB8-AFB6-B0D1AC900CB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClickDllTester", "ClickDllTester\ClickDllTester.csproj", "{A7C9AC3A-5350-4259-B6EC-9133CAE0290C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD74EDA5-EE07-4AB8-AFB6-B0D1AC900CB1}.Debug|x64.ActiveCfg = Debug|x64
+		{AD74EDA5-EE07-4AB8-AFB6-B0D1AC900CB1}.Debug|x64.Build.0 = Debug|x64
+		{AD74EDA5-EE07-4AB8-AFB6-B0D1AC900CB1}.Release|x64.ActiveCfg = Release|x64
+		{AD74EDA5-EE07-4AB8-AFB6-B0D1AC900CB1}.Release|x64.Build.0 = Release|x64
+		{A7C9AC3A-5350-4259-B6EC-9133CAE0290C}.Debug|x64.ActiveCfg = Debug|x64
+		{A7C9AC3A-5350-4259-B6EC-9133CAE0290C}.Debug|x64.Build.0 = Debug|x64
+		{A7C9AC3A-5350-4259-B6EC-9133CAE0290C}.Release|x64.ActiveCfg = Release|x64
+		{A7C9AC3A-5350-4259-B6EC-9133CAE0290C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1BB9CAA-C714-4F68-B8D1-47CAD9A90738}
+	EndGlobalSection
+EndGlobal
