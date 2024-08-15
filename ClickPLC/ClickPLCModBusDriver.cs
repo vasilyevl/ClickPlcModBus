@@ -70,7 +70,36 @@ namespace Grumpy.ClickPLC.Net.Driver
 
         }
 
+
+        /// <summary>
+        /// Creates and a CLICK PLC ModBus driver instance.
+        /// </summary>
+        /// <returns>
+        /// <c>IClickModBusDriver</c> if the driver was successfully created; otherwise, <c>null</c>.
+        /// </returns>
+        /// 
         public static IClickModBusDriver CreateDriver() => new ClickModBusDriver();
+
+        /// <summary>
+        /// Creates and initializes a CLICK PLC ModBus driver instance using the provided configuration.
+        /// </summary>
+        /// <param name="configuration">
+        /// A JSON string representing the network configuration required to establish communication with the PLC.
+        /// The configuration should include details such as the IP address, port number, and any other necessary parameters.
+        /// </param>
+        /// <param name="driver">
+        /// When this method returns, contains an initialized instance of <see cref="IClickModBusDriver"/> if the creation is successful; 
+        /// otherwise, <c>null</c>.
+        /// </param>
+        /// <returns>
+        /// <c>true</c> if the driver was successfully created and initialized; otherwise, <c>false</c>.
+        /// </returns>
+        /// <remarks>
+        /// This method attempts to parse the provided JSON configuration and instantiate a driver that can communicate 
+        /// with a CLICK PLC using the ModBus TCP protocol. Ensure that the JSON configuration string is correctly formatted and 
+        /// contains all necessary parameters.
+        /// </remarks>
+        /// 
 
         public static bool CreateDriver(string configuration,
             out IClickModBusDriver? driver) {
@@ -81,6 +110,7 @@ namespace Grumpy.ClickPLC.Net.Driver
             }
             return driver is not null;
         }
+
 
         public bool Init(object cnfg) {
 
